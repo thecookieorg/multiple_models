@@ -8,6 +8,7 @@ I've created three models:
 where all three of them have their own login/sign up URL, where, after a succesfull login, you're redirected to a specific root page for each of the model.
 
 
-* Ruby version
-
-* System dependencies
+I used:
+* Ruby version: 2.2.0
+* Rails: 4.2.0
+* Devise
