@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rolestest2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= link_to('Logout User', destroy_user_session_path, :method => :delete) %>        
+<%= link_to('Login User', new_user_session_path) %>  <br>
+<br>
+<%= link_to('Logout Trainer', destroy_trainer_session_path, :method => :delete) %>       
+<%= link_to('Login Trainer', new_trainer_session_path) %>  <br>
+<br>
+<%= link_to('Logout Admin', destroy_admin_session_path, :method => :delete) %>        
+<%= link_to('Login Admin', new_admin_session_path) %>  
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<%= yield %>
+
+</body>
+</html>
